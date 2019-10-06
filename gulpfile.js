@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const source = require('vinyl-source-stream');
 const browserify = require('browserify');
 const sass = require('gulp-sass');
-const dist = "OSPanel\domains\vue-admin\admin";
+const dist = "//LAPTOP-DTBPO48C/OSPanel/domains/vue-admin/admin";
 
 gulp.task("copy-html", () => {
     return gulp.src("./app/src/index.html")

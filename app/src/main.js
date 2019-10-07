@@ -23,7 +23,7 @@
 
 
 
-const Vue = require("vue");
+const Vue = require('../../node_modules/vue/dist/vue.js');
 const axios = require("axios");
 
 new Vue ({

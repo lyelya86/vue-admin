@@ -22,6 +22,7 @@ module.exports = class Editor {
             .then((html) => axios.post("./api/saveTempPage.php", { html }))
             .then(() => this.iframe.load("../temp.html"))
             .then(() => this.enableEditing())
+           // .then(() => this.injectStyles())
     }
 
     enableEditing() {

@@ -44,5 +44,5 @@ module.exports = class Editor {
         const html = this.serializeDomToStr(newDom);
         axios.post("./api/savePage.php", { pageName: this.currentPage, html })
 
-     }
+    }
 }

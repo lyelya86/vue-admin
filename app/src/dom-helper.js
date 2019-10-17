@@ -10,12 +10,12 @@ module.exports = class DOMHelper {
     }
 
     static wrapTextNodes(dom) {
+
         const body = dom.body;
-        
         let textNodes =[];
 
         function recursy(element) {
-            
+        
             element.childNodes.forEach((node) => {
                 if(node.nodeName === "#text" && node.nodeValue.replace(/\s+/g, "").length > 0) {
                     textNodes.push(node);
